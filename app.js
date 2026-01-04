@@ -16,21 +16,31 @@ async function fetchUsers() {
             <h2>${user.name}</h2>
             <p><strong>Username:</strong> ${user.username}</p>
             <p><strong>Email:</strong> ${user.email}</p>
+
             <p><strong>Address:</strong></p>
-            <div class="address">
-            <p>Street: ${user.address.street}</p>
-            <p>Suite: ${user.address.suite}</p>
-            <p>City: ${user.address.city}</p>
-            <p>Zipcode: ${user.address.zipcode}</p>
-            <p>Geo:</p>
-            <div class="geo">
-                <p>Lat: ${user.address.geo.lat}</p>
-                <p>Lng: ${user.address.geo.lng}</p>
-            </div>
-            </div>
+                <div class="address">
+                <p>Street: ${user.address.street}</p>
+                <p>Suite: ${user.address.suite}</p>
+                <p>City: ${user.address.city}</p>
+                <p>Zipcode: ${user.address.zipcode}</p>
+
+                    <p>Geo:</p>
+                    <div class="geo">
+                        <p>Lat: ${user.address.geo.lat}</p>
+                        <p>Lng: ${user.address.geo.lng}</p>
+                    </div>
+                </div>
+
             <p><strong>Phone:</strong> ${user.phone}</p>
             <p><strong>Website:</strong> ${user.website}</p>
-            <p><strong>Company:</strong> ${user.company.name}</p>
+
+            <p><strong>Company:</strong></p>
+                <div class="company">
+                    <p>Name: ${user.company.name}</p>
+                    <p>Catch phrase: ${user.company.catchPhrase}</p>
+                    <p>BS: ${user.company.bs}</p>
+                </div>
+
             <p>#${user.id}</p>
             `;
 
