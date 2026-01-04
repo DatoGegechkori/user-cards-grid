@@ -14,15 +14,15 @@ button {
     margin-bottom: 20px;
     padding: 8px 30px;
     font-size: 16px;
-    background-color: blue;
-    color: azure;
+    background-color: rgb(255, 204, 0);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     transition: 0.2s;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(19, 19, 199);
+    background-color: rgb(241, 195, 14);
     transform: scale(1.02);
 }
 
@@ -52,7 +52,7 @@ button:hover {
     font-size: 16px;
 }
 
-.address, .geo {
+.address, .geo, .company {
     margin-left: 15px;
     font-size: 14px;
     color: gray;
