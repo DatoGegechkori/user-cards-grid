@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:gainsboro;
+    padding: 25px;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px 30px;
+    font-size: 16px;
+    background-color: blue;
+    color: azure;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(19, 19, 199);
+    transform: scale(1.02);
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.userClass {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.userClass h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.userClass p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.address, .geo {
+    margin-left: 15px;
+    font-size: 14px;
+    color: gray;
+}
+
+.userClass:hover {
+    transform: scale(1.05);
+}
